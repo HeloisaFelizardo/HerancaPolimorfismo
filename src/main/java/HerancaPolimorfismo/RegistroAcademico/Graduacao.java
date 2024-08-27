@@ -9,9 +9,10 @@ class Graduacao extends EnsinoMedio {
     }
 
     @Override
-    public double getRendaTotal() {
-        return super.getRendaTotal() + super.getRendaTotal();
+    public double rendaTotal() {
+        return super.rendaTotal() + super.rendaTotal();
     }
+
 
     @Override
     public String getEscolaridade() {

@@ -3,15 +3,12 @@ package HerancaPolimorfismo.RegistroAcademico;
 abstract class Funcionario {
     private String nome;
     private String codigoFuncional;
-    protected double rendaBasica = 1000.00;
+    protected double rendaBasica;
 
     public Funcionario(String nome, String codigoFuncional) {
         this.nome = nome;
         this.codigoFuncional = codigoFuncional;
-    }
-
-    public double getRendaTotal() {
-        return rendaBasica;
+        this.rendaBasica = 1000.00;
     }
 
     public String getNome() {
@@ -21,6 +18,12 @@ abstract class Funcionario {
     public String getCodigoFuncional() {
         return codigoFuncional;
     }
+
+    public double rendaTotal() {
+        return rendaBasica;
+    }
+
+
 
     public String getEscolaridade() {
         return "Nenhum";

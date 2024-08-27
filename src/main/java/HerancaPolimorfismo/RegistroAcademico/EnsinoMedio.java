@@ -9,8 +9,8 @@ class EnsinoMedio extends EnsinoBasico {
     }
 
     @Override
-    public double getRendaTotal() {
-        return super.getRendaTotal() + (super.getRendaTotal() * 0.50);
+    public double rendaTotal() {
+        return super.rendaTotal() + (super.rendaTotal() * 0.50);
     }
 
     @Override

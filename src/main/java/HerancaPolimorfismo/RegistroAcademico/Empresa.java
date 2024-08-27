@@ -23,7 +23,7 @@ public class Empresa {
         double custoGraduacao = 0;
 
         for (Funcionario func : funcionarios) {
-            double renda = func.getRendaTotal();
+            double renda = func.rendaTotal();
             custoTotal += renda;
 
             switch (func.getEscolaridade()) {

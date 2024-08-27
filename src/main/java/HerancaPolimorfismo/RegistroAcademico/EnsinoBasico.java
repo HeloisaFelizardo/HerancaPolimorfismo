@@ -9,7 +9,7 @@ class EnsinoBasico extends Funcionario {
     }
 
     @Override
-    public double getRendaTotal() {
+    public double rendaTotal() {
         return rendaBasica + (rendaBasica * 0.10);
     }
 
