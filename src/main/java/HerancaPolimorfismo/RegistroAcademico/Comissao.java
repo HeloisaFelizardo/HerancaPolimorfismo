@@ -1,11 +1,6 @@
 package HerancaPolimorfismo.RegistroAcademico;
 
-public abstract class Comissao {
-    protected double salarioBase;
+interface Comissao {
 
-    public Comissao(double salarioBase) {
-        this.salarioBase = salarioBase;
-    }
-
-    public abstract double calcularSalarioTotal();
+    public abstract double calcularComissao();
 }

@@ -1,15 +1,22 @@
 package HerancaPolimorfismo.RegistroAcademico;
 
-public class Vendedor extends Comissao {
-    private static final double ADICIONAL = 250.00;
+public class Vendedor extends Funcionario implements Comissao {
 
-    public Vendedor(double salarioBase) {
-        super(salarioBase);
+    public Vendedor() {
+        super();
+    }
+
+    public Vendedor(String nome, String codigoFuncional,  Comissao comissao) {
+        super(nome, codigoFuncional, comissao);
     }
 
     @Override
-    public double calcularSalarioTotal() {
-        return salarioBase + ADICIONAL;
+    public double calcularComissao() {
+        return 250.00;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nComissão: " + calcularComissao();
     }
 }
-

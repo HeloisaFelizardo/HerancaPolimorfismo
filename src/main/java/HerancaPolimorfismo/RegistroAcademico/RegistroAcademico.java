@@ -1,6 +1,6 @@
 package HerancaPolimorfismo.RegistroAcademico;
 
-public class Main {
+public class RegistroAcademico {
     public static void main(String[] args) {
         Funcionario funcionario1 = new SemEstudo("João Silva", "001");
         Funcionario funcionario2 = new EnsinoBasico("Debora Duarte", "002", "Escola Primária XYZ");
@@ -14,6 +14,5 @@ public class Main {
         System.out.println(funcionario3);
         System.out.println();
         System.out.println(funcionario4);
-
     }
 }
